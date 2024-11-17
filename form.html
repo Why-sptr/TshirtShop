@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Icon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h4>Fashion Web</h4><i class="fa-solid fa-shirt"></i>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/profile.html">Profil</a></li>
+          <li><a href="/product.html">Produk</a></li>
+          <li><a href="/form.html">Saran</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form>
+      <h2>Masukan Kepada Kami</h2>
+      <div class="name">
+        <div class="first-name">
+          <label for="fname">Nama Depan</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Masukan Nama Depan"
+          />
+        </div>
+        <div class="last-name">
+          <label for="lname">Nama Belakang</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Masukan Nama Belakang"
+          />
+        </div>
+      </div>
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="contoh@gmail.com"
+        />
+      </div>
+      <div class="phone">
+        <label for="phone">Telepon</label>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          placeholder="0877xxxxxxxx"
+        />
+      </div>
+      <div class="category-f">
+        <label for="category-from">Kategori Saran</label>
+        <select id="category-from" name="category-from">
+          <option value="" disabled selected>Pilih saran kamu</option>
+          <option value="masukan">Masukan</option>
+          <option value="bug">Bug</option>
+          <option value="aduan">Aduan</option>
+        </select>
+      </div>
+      <div class="field-saran">
+        <label for="field">Saran</label>
+        <textarea
+          name="field"
+          id="field"
+          placeholder="Ketik saranmu disini..."
+        ></textarea>
+      </div>
+      <div class="file">
+        <label for="category-from">File pendukung</label>
+        <input type="file" />
+      </div>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <footer>
+      <p>
+        &copy; 2024 FashionWeb || Wahyu Cahyo Saputra (23670152). All Rights
+        Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
